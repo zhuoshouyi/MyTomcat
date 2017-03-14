@@ -1,0 +1,28 @@
+<!doctype html>
+<?php 
+	$id=_GET["Id"];
+	$name=_GET["Name"];
+	$age=_GET["Age"];
+ ?>
+<html>
+	<head>
+		<meta charset="utf-8">	
+	</head>
+	
+	<body>
+		<table border="1">
+			<tr>
+				<td>No</td>
+				<td>Name</td>
+				<td>Age</td>
+			</tr>
+			<?php for($i=1;$i<=6;$i++){ ?>
+			<tr>
+				<td><?php $id ?></td>
+				<td><?php $name ?></td>
+				<td><?php $age ?></td>
+			</tr>
+			<?php } ?>
+		</table>
+	</body>
+</html>
